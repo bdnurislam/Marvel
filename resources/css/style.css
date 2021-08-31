@@ -1,0 +1,908 @@
+/* ======================================
+
+Template Name: Merkury_Landing Page
+Template URI: G:\New Tutorial\WD\UY Lab\Files\02-Standard PSD\04-Veer
+Author: Dedarul Hasan
+Author URI: https://www.facebook.com/WhiteDevil2k/
+Version: 1.0
+Description: An awesome personal blog template.
+Support: mddedarulhasan@gmail.com
+Color: #31d7ce
+
+========================================*/
+
+/* ======================================
+
+CSS INDEX
+---------
+1.  Google Fonts
+2.  Common Css
+3.  Reusable
+4.  Menubar Css
+5.  Banner Css
+6.  About Css
+7.  Services Css
+8.  Work Css
+9.  Counting Css
+10. Blog Css
+11. JOIN_US Css
+12. Footer Css
+
+========================================*/
+
+
+/*==================================== 
+            1. Google Font Css
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap');
+
+/*==================================== 
+            2. Common Css
+====================================*/
+html,body{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+ul,ol{
+    list-style-type: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==================================== 
+            3. Reusable Css Start
+====================================*/
+
+.reuseable_header{
+    text-align: center;
+    position: relative;
+}
+.reuseable_header h2{
+    color: #e8e8e8;
+    text-transform: uppercase;
+    font-size: 9rem;
+    font-weight: 700;
+}
+.reuseable_header h3 {
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    color: #444;
+    font-weight: 600;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+
+/*==================================== 
+            4. HEADER Css Start
+====================================*/
+.header{
+    background-color: #fcfcfc;
+    padding-top: 5rem;
+    position: relative;
+}
+.header_title{
+    position: relative;
+    z-index: 1;
+}
+.header_title h1::after {
+    position: absolute;
+    content: '';
+    top: -17%;
+    left: -2%;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background-color: #ffe400;
+    z-index: -1;
+}
+.header_title h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #444;
+    margin-top: 18rem;
+}
+.header_content p{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    padding-top: 5rem;
+    padding-left: 1rem;
+}
+.header_content a button {
+    border: .1rem solid #444;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    margin: 1rem 0 0 1rem;
+    text-transform: uppercase;
+}
+.header_content img{
+    position: absolute;
+    top: 69%;
+    left: 58%;
+}
+.header_img img{
+    position: relative;
+}
+
+/*==================================== 
+            5. Menubar Css Start
+====================================*/
+
+.navbar{
+    font-size: 1.4rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    padding: 1rem 0;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #ffe400;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #ffe400;
+}
+
+/*==================================== 
+            6. About Css Start
+====================================*/
+
+#about{
+    padding: 10rem 0 15rem 0;
+}
+.about_para p{
+    font-size: 1.6rem;
+    font-family: 'Noto Sans';
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+
+.button_section{
+    text-align: center;
+    position: relative;
+}
+.button_section img {
+    position: absolute;
+    top: -300%;
+    left: -30%;
+    z-index: -1;
+}
+.info_button{
+    width: 20rem;
+    height: 6rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    background-color: #ffe400;
+    color: #000;
+    border: .1rem solid #ffe400;
+}
+.join_button{
+    width: 20rem;
+    height: 6rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    background-color: #ffe400;
+    color: #000;
+    border: .1rem solid #ffe400;
+    margin-left: 2rem;
+}
+.info_button:hover, .join_button:hover{
+    background-color: #000;
+    color: #ffe400;
+    border: .1rem solid #a6a6a6;
+}
+.big_icons{
+    text-align: center;
+    background-color: #000;
+    width: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    color: #fff;
+    transition: all linear 1s;
+}
+.big_icons_content p{
+    font-size: 1.4rem;
+    padding: 2rem 5rem;
+    opacity: 0;
+    transition: all linear 1s;
+}
+.big_icons_content ion-icon{
+    font-size: 13rem;
+    color: #ffe400;
+    padding-top: 5rem;
+}
+.big_icons_content h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+.big_icons:hover .big_icons_content p{
+    opacity: 1;
+    transition: all linear 1s;
+}
+.big_icons:hover {
+    background-color: #ffe400;
+    transition: all linear 1s;
+}
+.big_icons:hover .big_icons_content ion-icon{
+    color: #fff;
+}
+.number_title{
+    padding-top: 10rem;
+    text-align: center;
+    position: relative;
+}
+.number_title img {
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    z-index: -1;
+}
+.number_title h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin: 10rem 0;
+}
+.counting_number{
+    text-align: center;
+}
+.counting_number h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+}
+.counting_number span{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+/*==================================== 
+            7. Responsive Css Start
+====================================*/
+.responsive{
+    background-color: #fafafa;
+}
+.mt{
+    margin-top: 16rem;
+    text-align: left;
+}
+.mt h3{
+    left: 0.5%;
+}
+.Res_content{
+    margin-bottom: 10rem;
+}
+.Res_content p{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans';
+    padding: 5rem 0;
+    color: #757575;
+}
+.Res_content_list{
+    font-size: 1.5rem;
+    color: #757575;
+    line-height: 3rem;
+}
+.Res_content_list ion-icon{
+    padding-right: 1rem;
+}
+.purchase_button{
+    padding: 1rem 2rem;
+    outline: 0;
+    border: .1rem solid #ffe400;
+    border-radius: .4rem;
+    background-color: #ffe400;
+    color: #000;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.purchase_button:hover{
+    background-color: #000;
+    color: #fff;
+    border: .1rem solid #000;
+}
+.responsive_img{
+    margin-bottom: 10rem;
+}
+
+
+/*==================================== 
+            8. Introduction Css Start
+====================================*/
+.intro{
+    background: linear-gradient(rgba(36, 36, 36, 0.658), rgba(0, 0, 0, 0.664)), url(img/who_we_are.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.introduction{
+    margin: 14rem 0;
+}
+.introduction .o {
+    position: absolute;
+    top: 7%;
+    right: 4%;
+}
+.introduction h2{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.introduction p{
+    font-family: 'noto sans';
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 30rem 6rem 30rem ;
+}
+.intro_button{
+    width: 20rem;
+    height: 6rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    background-color: #ffe400;
+    color: #000;
+    border: .1rem solid #ffe400;
+    margin-right: 3rem;
+}
+.intro_button:hover{
+    background-color: transparent;
+    color: #ffe400;
+    border: .1rem solid #a6a6a6;
+}
+
+/*==================================== 
+            9. Features Css Start
+====================================*/
+.features{
+    margin: 10rem 0;
+}
+.feature_head h3{
+    left: 26%;
+    font-size: 3rem;
+}
+
+.icons{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+.bgc-1{
+    background-color: #73c8b7;
+}
+.bgc-2{
+    background-color: #31aae2;
+}
+.bgc-3{
+    background-color: #c183d6;
+}
+.bgc-4{
+    background-color: #eb768c;
+}
+.bgc-5{
+    background-color: #73c8b7;
+}
+.bgc-6{
+    background-color: #31aae2;
+}
+.bgc-7{
+    background-color: #ebd175;
+}
+.bgc-8{
+    background-color: #718ac7;
+}
+.bgc-9{
+    background-color: #4be3a4;
+}
+.icons ion-icon{
+    font-size: 2.5rem;
+    color: #fff;
+    padding-left: 1.7rem;
+    padding-top: 1.5rem;
+}
+.icons_content {
+    padding: 0 2rem;
+}
+.icons_content h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.icons_content p{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.marg{
+    margin-top: 6rem;
+}
+
+/*==================================== 
+            10. Work Css Start
+====================================*/
+.work{
+    margin: 10rem 0;
+    padding-top: 7rem;
+    background-color: #ffe400;
+}
+.work_head {
+    padding-bottom: 5rem;
+}
+.work_head h2{
+    color: #e8d100;
+}
+.work_head h3{
+    left: 39%;
+}
+.button-group{
+    padding-bottom: 5rem;
+}
+
+
+/*==================================== 
+            11. Services Css Start
+====================================*/
+
+.services{
+    position: relative;
+}
+.services_header{
+    padding-bottom: 10rem;
+}
+.services_header h3 {
+    left: 8%;
+    font-size: 3rem;
+}
+.service_img img {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 40%;
+    z-index: -1;
+}
+.service_icon{
+    text-align: center;
+    padding: 4rem 0;
+}
+.service_icon_head ion-icon{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.service_icon_head h2{
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.service_icon_head p{
+    font-size: 1.4rem;
+    font-family: 'Montserrat';
+    padding: 2rem;
+}
+
+
+
+/*==================================== 
+            12. Price Css Start
+====================================*/
+.pricing{
+    background-color: #ffe400;
+    padding: 10rem 0;
+}
+.price_header h2 {
+    color: #e5d119;
+}
+.price_header h3 {
+    left: 37%;
+    font-size: 3rem;
+    color: #010101;
+    
+}
+
+.card_img{
+    position: relative;
+}
+.card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #60605fb9;
+}
+.card-body{
+    text-align: center;
+    color: #fff;
+}
+.card-body h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+}
+.card-body h1 sup{
+    font-size: 3rem;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+}
+.card-body h1 sub{
+    font-family: 'Noto Sans';
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.card-body h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+.card-body p{
+    font-size: 1.3rem;
+    font-family: 'noto sans';
+    font-weight: normal;
+    padding-top: 2rem;
+}
+.price_plan ul li{
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.price_plan ul li:nth-child(1){
+    margin-top: 5rem;
+}
+.card_button {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #444;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.price_hover h2{
+    opacity: 0;
+    text-align: center;
+    color: #444;
+    padding: 1rem 0;
+    background-color: #e6e6e6;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.4rem;
+    transition: all linear 0.5s;
+}
+.price_plan:hover .price_hover h2{
+    opacity: 1;
+    transition: all linear 0.5s;
+    margin: 0;
+}
+
+/*==================================== 
+            13. Team Css Start
+====================================*/
+.team{
+    padding: 20rem 0;
+}
+.team_header h3{
+    left: 39.3%;
+    font-size: 3rem;
+}
+
+.member_name{
+    text-align: center;
+}
+.member_name h2 {
+    margin-top: .5rem;
+    background-color: #ebebeb;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 3rem 0 4rem 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.member_name p{
+    background-color: #ebebeb;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+.member_img{
+    position: relative;
+    margin-top: 10rem;
+}
+.member_details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: #e5d119;
+    opacity: 0;
+    transition: all linear .5s;
+}
+.member_names{
+    text-align: center;
+}
+.member_names h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-top: 10rem;
+}
+.member_names span{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+.member_names p{
+    font-size: 1.4rem;
+    padding: 10rem 3rem;
+}
+.member_social_details{
+    text-align: center;
+}
+.member_social_details ion-icon {
+    font-size: 2rem;
+    padding: 0 2rem;
+    padding-top: 18rem;
+    color: #6b6000;
+}
+.member_names::after {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    content: '----------------------------------------------------------------------------------------------';
+    color: #ab9900;
+}
+.member_name::after {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    content: '----------------------------------------------------------------------------------------------';
+    color: #b7b7b7;
+}
+
+.member_img:hover .member_details{
+    opacity: 1;
+    transition: all linear .5s;
+}
+.member_img:hover .member_name::after{
+    opacity: 0;
+}
+
+/*================================================ 
+            14. Get IN Touch Css Start
+================================================*/
+.getInTouch{
+    background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.719)), 
+    url(img/imprasive.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.get_content{
+    padding: 10rem 0;
+    text-align: center;
+    color: #fff;
+}
+.get_text h2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.get_text p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.getIn_button button{
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin-top: 6rem;
+    border: .1rem solid #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.getIn_button button:hover{
+    background-color: #e5d119;
+    border: .1rem solid #e5d119;
+}
+.getIn_button button:nth-child(2){
+    margin-left: 2rem;
+}
+
+/*==================================== 
+            15. Blog Css Start
+====================================*/
+.blog{
+    padding: 10rem 0;
+}
+.blog_header h3 {
+    left: 38%;
+    font-size: 3rem;
+}
+.blog_img{
+    position: relative;
+}
+.blog_overlay {
+    position: absolute;
+    bottom: -7%;
+    left: 22%;
+    background-color: #f9f9f9;
+    padding: 0rem 3rem;
+    border-radius: 2rem;
+}
+.blog_overlay h2{
+    padding-top: 1rem;
+    color: #444;
+    font-size: 1.6rem;
+}
+.blog_content{
+    text-align: center;
+    margin-top: 5rem;
+}
+.blog_text{
+    padding-top: 4.5rem;
+}
+.blog_text h1{
+    color: #444;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.blog_text span{
+    color: #7e7e7e;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+.blog_text p {
+    padding: 4rem 2rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat';
+    text-align: justify;
+    margin: 0;
+}
+.blog_btn {
+    background-color: #f9f9f9;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+.blog_btn:hover {
+    background-color: #ffe400;
+    border: .1rem solid #000;
+}
+
+/*==================================== 
+            16. Contact Css Start
+====================================*/
+.contact{
+    padding: 10rem 0;
+    background: url(img/map.jpg) no-repeat center top / cover ;
+}
+.contact_head h3{
+    font-size: 3rem;
+    left: 39%;
+}
+.contact_head {
+    padding-bottom: 10rem;
+}
+.input_form input {
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    padding-left: 2rem;
+}
+.input_form input::placeholder {
+    color: #808080;
+}
+.contact_form form textarea{
+    font-size: 1.4rem;
+    padding-left: 2rem;
+}
+.contact_form form button{
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #ffe400;
+    border: none;
+}
+.contact_form form button:hover{
+    background-color: #212121;
+    border: none;
+}
+
+
+/*==================================== 
+            17. Footer Css Start
+====================================*/
+.footer_icons{
+    background-color: #212121;
+    padding: 5rem 0;
+}
+.foot_icon{
+    padding-top: 3rem;
+}
+.foot_icon ion-icon{
+    padding-top: 0;
+    margin: 2rem 0;
+    color: #fff;
+}
+.foot_icon ion-icon:hover{
+    color: #e8d100;
+}
+.copyright{
+    background-color: #2e2d2d;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+.copyright p{
+    margin: 0;
+    font-family: 'Montserrat';
+}
+.footer_phn {
+    background-color: #2e2d2d;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid #fff;
+    margin-left: 13.5rem;
+}
+.footer_address{
+    text-align: center;
+}
+.footer_address p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+}

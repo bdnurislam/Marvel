@@ -1,0 +1,127 @@
+@media (max-width: 576px) {
+    .header_content img{
+        display: none;
+    }
+
+    .reuseable_header h3 {
+        font-size: 3rem;
+        left: 7%;
+    }
+
+    .navbar-nav{
+        margin-top: 2rem;
+    }
+    .navbar-nav a{
+        margin-top: 1rem;
+    }
+
+    .big_icons:hover .big_icons_content p {
+        padding: 7rem;
+        margin-top: 2rem;
+    }
+    .feature_head h3{
+        font-size: 2.5rem;
+    }
+    .work_head h3{
+        left: 25%;
+    }
+    .work_item img{
+        width: 100%;
+    }
+    .price_header h3{
+        left: 17%;
+    }
+    .price_plan{
+        margin-top: 2rem;
+    }
+    .team_header h3{
+        left: 23%;
+    }
+    .member_name::after{
+        left: 18%;
+    }
+    .member_names::after{
+        left: 18%;
+    }
+    .footer_phn {
+        text-align: center;
+        margin-left: 24rem;
+        margin-top: 3rem;
+    }
+    .blog_header h3{
+        left: 20%;
+    }
+    .blog_overlay {
+        left: 38%;
+    }
+   .contact_head h3{
+       left: 22%;
+   }
+    .button_section img{
+        display: none;
+    }
+    .number_title img{
+        display: none;
+    }
+    .counting_number{
+        padding-top: 4rem;
+    }
+    .responsive_img{
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .introduction p{
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header{
+        margin-bottom: 3rem;
+    }
+    .header_content img{
+        display: none;
+    }
+    .header_img{
+        position: relative;
+    } 
+    .header_img img{
+        position: absolute;
+        top: 19rem;
+    }
+    .header_title h1{
+        font-size: 4rem;
+    }
+    .header_title h1::after{
+        top: -32%;
+    }
+    .about_header h3{
+        left: 16%;
+    }
+    .big_icons:hover .big_icons_content p {
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .number_title img{
+        right: -4.4%;
+    }
+    .number_title h2{
+        padding-top: 20rem;
+    }
+    .responsive_header h3{
+        left: 4%;
+    }
+    .responsive_img img{
+        padding-top: 4rem;
+    }
+    .introduction p{
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+    .feature_head h3{
+        left: 8%;
+    }
+}
